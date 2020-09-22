@@ -1,5 +1,11 @@
 import mongoose from 'mongoose';
 
+interface TodoDoc extends mongoose.Document {
+  title: string;
+  label: string;
+  user: string;
+}
+
 const TodosSchema = new mongoose.Schema({
     title: {
       type: String,
@@ -20,4 +26,4 @@ const TodosSchema = new mongoose.Schema({
     },
 });
 
-export default mongoose.model('Todos', TodosSchema);
+export default mongoose.model<TodoDoc>('Todos', TodosSchema);
