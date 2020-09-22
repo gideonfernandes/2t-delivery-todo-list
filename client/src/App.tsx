@@ -1,6 +1,7 @@
 import React from 'react';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
+import Splash from './pages/Splash';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Todos from './pages/Todos'
@@ -17,7 +18,8 @@ function App() {
         <Header />
         
         <Routes>
-          <Route path="/" element={<Login />} />
+          <Route path="/" element={<Splash />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/todos" element={<Todos />} />
         </Routes>

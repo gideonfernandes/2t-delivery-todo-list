@@ -14,6 +14,7 @@ export default createGlobalStyle`
 
   html {
     min-height: 100%;
+    background: var(--light-gray);
   }
 
   ul {
