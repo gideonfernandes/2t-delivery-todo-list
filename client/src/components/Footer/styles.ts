@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
   width: 100%;
   height: 50px;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   color: var(--light-gray);
