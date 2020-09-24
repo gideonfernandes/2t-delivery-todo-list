@@ -52,6 +52,7 @@ export default class TodoController {
   async update (request: Request, response: Response) {
     const schema = Yup.object().shape({
       title: Yup.string().required(),
+      label: Yup.string().required(),
     });
 
     if (!(await schema.isValid(request.body))) {
@@ -61,11 +62,11 @@ export default class TodoController {
     // Get todo_id from params
     const { todo_id } = request.params;
 
-    const { title } = request.body;
+    const { title, label } = request.body;
 
     const todo = await Todo.findByIdAndUpdate(
       todo_id,
-      { title },
+      { title, label },
       { new: true },
     );
 
