@@ -11,10 +11,12 @@ This project was developed with the following technologies:
 - Node.js
 - Express.js
 - MongoDB & Mongoose
+- Typescript
 - Yup
 - JWT & bcryptjs
 - ReactJS
 - Styled Components
+- React Icons
 - Axios
 - {...}
 ***
