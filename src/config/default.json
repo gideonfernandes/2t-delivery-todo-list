@@ -1,0 +1,5 @@
+{
+  "mongoURI": "mongodb+srv://omnistack:omnistack@omnistack-weeks.aiqhn.mongodb.net/todo-list?retryWrites=true&w=majority",
+  "jwtSecret": "2t-delivery-todo-list-jwt-secret",
+  "jwtExpiresIn": "7d"
+}
